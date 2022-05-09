@@ -1,0 +1,1 @@
+fmt.Println(reflect.TypeOf(y[c]), y[c], numb1)
