@@ -1,0 +1,16 @@
+1 Создать бота в телеграм
+  - ищем @botfather в телеграме (с синей галочкой!!!)
+  - пишем ему команду /newbot
+  - придумываем имя боту (должно заканчиваться на _bot)
+  - получаем id(HTTP TOKEN) бота (большое такое сообщение)
+
+2 Подставить данные в адресную строку
+  - https://api.telegram.org/bot5446221484:AAGLoLXUHXTHUl1lqiSHp3r_-2jkhO04p3I/getUpdates
+  (пример https://api.telegram.org/bot$dhf7dbfbfjj79jd/getUpdates )
+
+3 отправить GET запрос
+ увидеть json
+
+Пример
+1999816871
+https://api.telegram.org/bot5446221484:AAGLoLXUHXTHUl1lqiSHp3r_-2jkhO04p3I/sendMessage?chat_id=1999816871&text=hi
