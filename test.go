@@ -1,7 +1,7 @@
 package main
-
 import "fmt"
 
+// Основной метод
 func main() {
 	a := 5
 	b := 1.2

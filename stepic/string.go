@@ -135,14 +135,14 @@ func main2_5_6_better() {
     var str string
 	fmt.Scan(&str)
     asRunes := []rune(str)
-    alpha := "abcdefghijklmnopqrstuvwxyz"
     isOk := true
     for _, el :=range asRunes {
-        if !(strings.Contains(alpha, strings.ToLower(string(el))) || unicode.IsDigit(el)){
+        if !(unicode.Is(unicode.Latin, el) || unicode.IsDigit(el)){
             isOk = false
+            break
         }
     }
-    if utf8.RuneCountInString(str) >= 5 && isOk {
+    if len(asRunes) >= 5 && isOk {
         fmt.Println("Ok")      
     } else {
         fmt.Println("Wrong password")

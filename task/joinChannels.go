@@ -1,3 +1,6 @@
+/*
+Слить N каналов в один
+*/
 package main
 
 import (
